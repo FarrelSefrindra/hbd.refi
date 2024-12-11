@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    color: #00d6fc; /* Warna teks */
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan hitam */
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #00d6fc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #00d6fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #91ff00;
+}
+.ucapan {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em; /* Ukuran font untuk ucapan */
+    color: #00ccff; /* Warna teks ucapan */
+    animation: fadeIn 1s; /* Menambahkan efek fade-in pada ucapan */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+input:focus {
+    border-color: #00d6fc; /* Mengubah warna border saat input difokuskan */
+    outline: none; /* Menghilangkan outline default */
+}
+
+button:active {
+    transform: scale(0.95); /* Efek mengecil saat tombol ditekan */
+}
+audio {
+    display:ruby-text-container; /* Menyembunyikan elemen audio */
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em; /* Ukuran font untuk ucapan */
+    color: #00ccff; /* Warna teks ucapan */
+    animation: fadeIn 1s; /* Menambahkan efek fade-in pada ucapan */
+    border: 2px solid #00d6fc; /* Menambahkan border */
+    border-radius: 10px; /* Membuat sudut border melengkung */
+    padding: 20px; /* Menambahkan padding di dalam border */
+    background-color: rgba(0, 0, 0, 0.8); /* Warna latar belakang dengan transparansi */
+}
+.ucapan {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em; /* Ukuran font untuk ucapan */
+    color: #00ccff; /* Warna teks ucapan */
+    animation: fadeIn 1s; /* Menambahkan efek fade-in pada ucapan */
+    border: 2px solid #00d6fc; /* Menambahkan border */
+    border-radius: 10px; /* Membuat sudut border melengkung */
+    padding: 20px; /* Menambahkan padding di dalam border */
+    background-color: rgba(0, 0, 0, 0.8); /* Warna latar belakang dengan transparansi */
+}
+.gambar-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak gambar */
+    justify-content: center; /* Mengatur gambar agar berada di tengah */
+    margin-top: 20px; /* Memberikan jarak atas */
+}
+
+.gambar-container img {
+    width: 150px; /* Lebar gambar */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio */
+    margin: 0 10px; /* Memberikan jarak antar gambar */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+}

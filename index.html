@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special For Me</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+    <style>
+        /* Gaya untuk video latar belakang */
+        #background-video {
+            position: fixed; /* Memastikan video tetap di belakang */
+            top: 0;
+            left: 0;
+            width: 100%; /* Mengisi lebar layar */
+            height: 100%; /* Mengisi tinggi layar */
+            object-fit: cover; /* Memastikan video tidak terdistorsi */
+            z-index: -1; /* Menempatkan video di belakang elemen lainnya */
+        }
+    </style>
+</head>
+<body>
+
+    <video id="background-video" autoplay loop muted>
+        <source src="Balloons loop.mp4" type="video/mp4"> <!-- Ganti dengan path video Anda -->
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>🎂🎈 For Someone Special For Me 🎂🎈</h1>
+    <input type="text" id="nama" placeholder="Masukkan nama" required>
+    <input type="number" id="usia" placeholder="Masukkan usia" required>
+    <button onclick="tampilkanUcapan()">Konfirmasi 🎉🎁</button>
+
+    <div class="ucapan" id="ucapan"></div>
+
+    <audio src="Happy Birthday Song!!! (mp3cut.net).mp3"
+        controls 
+        autoplay 
+        preload="auto"
+        loop
+    ></audio>
+
+    <script src="script.js"></script> <!-- Link ke file JavaScript -->
+</body>
+</html>
